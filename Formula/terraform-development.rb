@@ -7,7 +7,7 @@ class TerraformDevelopment < Formula
   sha256 Digest::SHA256.file(File.expand_path(__FILE__)).hexdigest
   license "BSD-2-Clause"
   version "1"
-  revision 1
+  revision 2
 
   depends_on "bash"
   depends_on "coreutils"
@@ -15,6 +15,9 @@ class TerraformDevelopment < Formula
   depends_on "pre-commit"
   depends_on "tflint"
   depends_on "tfsec"
+
+  depends_on "awscli"
+  depends_on "azure-cli"
 
   depends_on "warrensbox/tap/tfswitch"
 
