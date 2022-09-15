@@ -7,7 +7,7 @@ class TerraformDevelopment < Formula
   sha256 Digest::SHA256.file(File.expand_path(__FILE__)).hexdigest
   license "BSD-2-Clause"
   version "1"
-  revision 0
+  revision 1
 
   depends_on "bash"
   depends_on "coreutils"
@@ -18,7 +18,7 @@ class TerraformDevelopment < Formula
 
   depends_on "warrensbox/tap/tfswitch"
 
-  keg_only "it's used to install development guideline requirements only"
+  keg_only "it's used to install Terraform development requirements only"
 
   def install
     bin.install_symlink libexec/"terraform-development"
